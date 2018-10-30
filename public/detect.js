@@ -11,7 +11,7 @@ app.controller("Ctrl1", function ($scope, $http) {
         $scope.desc="";
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/get1?url=' + $scope.url
+            url: 'https://secret-brushlands-75804.herokuapp.com/get1?url=' + $scope.url
         }).then(function successCallback(response) {
             console.log(response.data);
             
